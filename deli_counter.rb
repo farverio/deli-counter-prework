@@ -4,7 +4,6 @@ def line(array)
   if array.size > 0 
     output = "The line is currently: "
     array.each_with_index {|el, idx| output.concat("#{idx+1}. #{el} ")}
-    output = output
     puts output
   else
     puts "The line is currently empty."
